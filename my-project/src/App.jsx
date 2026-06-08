@@ -3,33 +3,48 @@ import './App.css'
 function App() {
   return (
     <div className="portfolio">
+      <nav className="site-nav">
+        <div className="nav-left">
+          <div className="logo">Sarah J. Mathias</div>
+        </div>
+        <div className="nav-right">
+          <a className="nav-link" href="#projects">Projects</a>
+          <a className="nav-link" href="#certs">Certifications</a>
+          <a className="nav-link" href="#contact">Contact</a>
+          <a className="nav-link" href="https://www.linkedin.com/in/sarah-jenial-mathias-3274ba290" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a className="btn btn-primary" href="/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+        </div>
+      </nav>
+
       <header className="hero-section">
         <div className="hero-copy">
           <p className="eyebrow">Portfolio</p>
-          <h1>SARAH JENIAL MATHIAS</h1>
-          <p className="subtitle">
-            B.Tech Computer Science student building web applications, APIs, and
-            data-driven tools for modern workflows.
-          </p>
-          <div className="contact-links">
-            <a href="mailto:sarahmathias375@gmail.com">sarahmathias375@gmail.com</a>
-            <span>•</span>
-            <a href="tel:+919148743479">+91-9148743479</a>
-            <span>•</span>
-            <a href="https://github.com/jenial619" target="_blank" rel="noreferrer">github.com/jenial619</a>
-            <span>•</span>
-            <a href="https://linkedin.com/in/sarah-jenial-mathias" target="_blank" rel="noreferrer">linkedin.com/in/sarah-jenial-mathias</a>
+          <div className="hero-row">
+            <h1>SARAH JENIAL MATHIAS</h1>
+            <div className="avatar">SJ</div>
           </div>
+
+          <p className="subtitle">
+            B.Tech Computer Science student building web applications, APIs,
+            and data-driven tools. Experienced with FastAPI, React, and
+            PostgreSQL.
+          </p>
+
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+            <a className="btn btn-outline" href="https://github.com/jenial619" target="_blank" rel="noreferrer">View GitHub</a>
+            <a className="btn btn-outline" href="https://www.linkedin.com/in/sarah-jenial-mathias-3274ba290" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
           <p className="objective">
             To become a successful professional in computer science through
             dedicated effort, continuous learning, and contributions to
             organizational growth.
           </p>
         </div>
-        <div className="hero-card">
-          <div className="card-header">
-            <span>Resume Snapshot</span>
-          </div>
+
+        <aside className="hero-card">
+          <div className="card-header">Resume Snapshot</div>
           <div className="stat-grid">
             <div>
               <strong>9.33</strong>
@@ -44,11 +59,11 @@ function App() {
               <span>Web stack</span>
             </div>
           </div>
-        </div>
+        </aside>
       </header>
 
       <main>
-        <section className="section section--split">
+        <section id="education" className="section section--split">
           <div>
             <h2>Education</h2>
             <div className="card">
@@ -89,7 +104,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section">
+        <section id="projects" className="section">
           <h2>Internships & Projects</h2>
           <div className="project-grid">
             <article className="project-card">
@@ -141,7 +156,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section section--two-column">
+        <section id="certs" className="section section--two-column">
           <div>
             <h2>Certifications</h2>
             <ul className="bullet-list">
@@ -160,6 +175,15 @@ function App() {
           </div>
         </section>
       </main>
+
+      <footer className="site-footer" id="contact">
+        <div>© {new Date().getFullYear()} Sarah Jenial Mathias</div>
+        <div className="footer-links">
+          <a href="mailto:sarahmathias375@gmail.com">sarahmathias375@gmail.com</a>
+          <span style={{margin: '0 8px'}}>|</span>
+          <a href="https://www.linkedin.com/in/sarah-jenial-mathias-3274ba290" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </footer>
     </div>
   )
 }

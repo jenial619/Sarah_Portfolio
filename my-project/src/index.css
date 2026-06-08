@@ -1,15 +1,18 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --text: #1E293B;
+  --text-h: #1E293B;
+  --muted: #64748B;
+  --bg: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --border: #E2E8F0;
+  --code-bg: #EFF6FF;
+  --accent: #2563EB;
+  --accent2: #14B8A6;
+  --accent-bg: rgba(20, 184, 166, 0.12);
+  --accent-border: rgba(37, 99, 235, 0.24);
+  --social-bg: rgba(20, 184, 166, 0.12);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(15, 23, 42, 0.08) 0 18px 36px -16px, rgba(15, 23, 42, 0.08) 0 4px 10px -4px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -32,17 +35,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: #e2e8f0;
+    --text-h: #f8faf0;
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --border: #334155;
+    --code-bg: #1e293b;
+    --accent: #2563eb;
+    --accent2: #60a5fa;
+    --accent-bg: rgba(37, 99, 235, 0.15);
+    --accent-border: rgba(37, 99, 235, 0.35);
+    --social-bg: rgba(96, 165, 250, 0.16);
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(15, 23, 42, 0.35) 0 20px 40px -12px, rgba(15, 23, 42, 0.25) 0 6px 20px -6px;
   }
 
   #social .button-icon {
@@ -52,7 +57,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
+  background: radial-gradient(circle at top left, rgba(20, 184, 166, 0.06), transparent 28%),
+    linear-gradient(180deg, var(--bg) 0%, #ffffff 100%);
 }
 
 #root {
