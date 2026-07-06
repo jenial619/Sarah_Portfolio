@@ -5,7 +5,7 @@ function App() {
     <div className="portfolio">
       <nav className="site-nav">
         <div className="nav-left">
-          <div className="logo">Sarah J. Mathias</div>
+          <div className="logo">Sarah Jenial Mathias</div>
         </div>
         <div className="nav-right">
           <a className="nav-link" href="#projects">Projects</a>
