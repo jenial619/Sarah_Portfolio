@@ -47,7 +47,7 @@ function App() {
           <div className="card-header">Resume Snapshot</div>
           <div className="stat-grid">
             <div>
-              <strong>9.33</strong>
+              <strong>9.42</strong>
               <span>CGPA</span>
             </div>
             <div>
