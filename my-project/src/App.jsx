@@ -69,7 +69,7 @@ function App() {
             <div className="card">
               <h3>B.Tech in Computer Science and Engineering</h3>
               <p>NMAM Institute of Technology, Nitte</p>
-              <p>CGPA: 9.33</p>
+              <p>CGPA: 9.42</p>
             </div>
             <div className="card">
               <h3>Pre-University (PU)</h3>
